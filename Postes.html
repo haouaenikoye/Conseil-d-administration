@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/b593391d68.js" crossorigin="anonymous"></script> <!--fontawesonn-->
+     <link rel="stylesheet" href="style.css">
+    <title>AdminBoard</title>
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container font-weight-bold">
+            <a href="index.html" class="navbar-brand">AdminBoard</a>
+            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#NavbarContente">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="NavbarContente">
+                <ul class="navbar-nav nav">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="postes.html" class="nav-link">Postes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categories.html" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="utilisateurs.html" class="nav-link">Utilisateurs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navigation_right">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" role="button" class="nav-link dropdown-toggle" id="dropdown_link" data-toggle="dropdown" aria-haspopup="true">Compte</a>
+                        <div class="dropdown-menu" aria-labelledby="#dropdown_link">
+                            <a href="profil.html" class="dropdown-item"> <i class="fas fa-user-circle"></i> Profil</a>
+                            <a href="" class="dropdown-item"> <i class="fas fa-cog"></i> Parametre</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a href="log.html" class="nav-link"> <i class="fas fa-user-alt-slash"></i> Log-Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <!--header-->
+     <!-- Dashboard-->
+     <section class="posts_title bg-primary">
+        <div class="container py-lg-3 py-3 text-white">
+            <h2 class="font-weight-bold"> <i class="fas fa-pencil-alt"></i> Posts </h2>
+        </div>
+    </section>
+      <!-- Dashboard-->
+      <!--Ajout-->
+      <section class="bg-light">
+        <div class="container py-lg-4 py-3">
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary" >Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       <!--Ajout-->
+     
+  <!--Card -->
+  <section id="card" class="py-4">
+    <div class="container py-lg-5">
+        <div class="row">
+            <div class="col-md-12 col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h4>Les postes les plus recents</h4>
+                        </div>
+                    </div>
+                        <div class="card-body">
+                            <table class="table p-0">
+                                <thead class="thead-dark">
+                                  <table class="table">
+                                      <thead class="thead-dark">
+                                        <tr>
+                                          <th scope="col">#</th>
+                                          <th scope="col">titre</th>
+                                          <th scope="col">Categories</th>
+                                          <th scope="col">Dates du Postes</th>
+                                          <th></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Post one</td>
+                                          <td>communicatrice ONG Fondei Mabori</td>
+                                          <td>Septembre 2009</td>
+                                          <td>
+                                              <a href=""  role="button" class="btn btn-sm btn-dark bg-dark"><i class="fas fa-angle-double-right"></i> Détails</a>
+                                          </td>
+                                         
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Post Two</td>
+                                          <td>Buqtik Maitourare Assistante</td>
+                                          <td>janvier 2019</td>
+                                          <td>
+                                              <a href=""  role="button" class="btn btn-sm btn-dark bg-dark"><i class="fas fa-angle-double-right"></i> Détails</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Post three</td>
+                                          <td>Entreprise de Kakandadi</td>
+                                          <td>2019-2020</td>
+                                          <td>
+                                              <a href=""  role="button" class="btn btn-sm btn-dark bg-dark"><i class="fas fa-angle-double-right"></i> Détails</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">4</th>
+                                          <td>Post four</td>
+                                          <td>Etudiante UAM</td>
+                                          <td> 2016-2020</td>
+                                          <td>
+                                              <a href=""  role="button" class="btn btn-sm btn-dark bg-dark"><i class="fas fa-angle-double-right"></i> Détails</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">5</th>
+                                          <td>Post five</td>
+                                          <td>Sociologie</td>
+                                          <td>2017-2020</td>
+                                          <td>
+                                              <a href=""  role="button" class="btn btn-sm btn-dark bg-dark"><i class="fas fa-angle-double-right"></i> Détails</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">6</th>
+                                          <td>Post six</td>
+                                          <td>Codeuue</td>
+                                          <td>28 Octobre 2019-2020</td>
+                                          <td>
+                                              <a href="#"  role="button" class="btn btn-sm btn-dark bg-dark"><i class="fas fa-angle-double-right"></i> Détails</a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </thead>
+                            </table>
+                        </div>
+                </div>
+            </div>
+                                      <div class="card-body">
+                                        <nav aria-label="Page navigation example">
+                                          <ul class="pagination">
+                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                          </ul>
+                                        </nav>
+                                      </div>
+                                  </thead>
+                              </table>
+                          </div>
+                  </div>
+              </div>
+              <!--card-->
+             
+                 
+            
+  </section>
+   <!--Card -->
+   <!--footer-->
+   <footer class="bg-dark">
+    <div class="container py-lg-4 py-3">
+        <p class="text-center text-white">Created by Wahab</p>
+    </div>
+</footer>
+ <!--footer-->
+
+     
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
